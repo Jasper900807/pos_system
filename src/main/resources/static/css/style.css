@@ -1,0 +1,246 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.full-page {
+    height: 100vh;
+}
+.sidebar {
+    width: 180px;
+    background-color: black;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h5 {
+    margin: 0;
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 22px;
+    line-height: 1.2;
+}
+.sidebar a, .sidebar .disabled {
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 20px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 18px;
+}
+.sidebar .disabled {
+    color: gray;
+    pointer-events: none;
+    background-color: #D9D9D9;
+}
+.tabs {
+    background-color: #fdf8e4;
+    height: 70px;
+}
+.tab-button {
+    background-color: #D9D9D9;
+    border: none;
+    padding: 18px 15px;
+    font-size: 24px;
+    flex: 1;
+    width: 33.33%;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.tab-button.active {
+    background-color: transparent;
+    font-weight: normal;
+}
+.main-title {
+    background-color: #fdf8e4;
+    height: 100px;
+}
+.main-title h1 {
+    font-size: 32px;
+}
+.content-area {
+    background-color: #D9D9D9;
+}
+.content-area h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.content-area p {
+    font-size: 16px;
+}
+
+/* 員工編號輸入介面樣式 */
+.clock-input-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.employee-input-group {
+    margin-bottom: 30px;
+}
+
+.employee-input {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+}
+
+.number-pad {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.number-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.number-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.number-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.number-btn:active {
+    background-color: #e0e0e0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.clear-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* 打卡操作頁面樣式 */
+.clock-action-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.clock-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.clock-button-wrapper {
+    text-align: center;
+}
+
+.clock-btn {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.clock-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.clock-btn:active {
+    background-color: #e0e0e0;
+}
+
+.arrow-up {
+    color: #333;
+    font-weight: bold;
+}
+
+.arrow-down {
+    color: #333;
+    font-weight: bold;
+}
+
+.clock-btn-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.current-time {
+    margin: 30px 0;
+}
+
+.current-time p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.back-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.back-btn:hover {
+    background-color: #1976D2;
+}

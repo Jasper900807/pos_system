@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>員工作業系統</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <div class="d-flex full-page">
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column">
+      <h5 class="text-center">員工作業系統</h5>
+      <a href="#">庫存管理</a>
+      <a href="#">訂單總覽</a>
+      <span class="disabled">打卡上下班</span>
+      <a href="#">小結/關帳</a>
+      <a href="#">問題/異常回報</a>
+      <a href="#">上/下架商品</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-grow-1 d-flex flex-column">
+      <!-- Main Title -->
+      <div class="main-title d-flex justify-content-center align-items-center">
+        <h1 class="mb-0">打卡與打卡紀錄</h1>
+      </div>
+      
+      <!-- Tabs -->
+      <div class="tabs d-flex">
+        <button class="tab-button active" onclick="switchTab('clock')">員工打卡</button>
+        <button class="tab-button" onclick="switchTab('records')">打卡紀錄</button>
+        <button class="tab-button" onclick="switchTab('schedule')">班表查詢</button>
+      </div>
+
+      <!-- Centered content -->
+      <div class="flex-grow-1 d-flex justify-content-center align-items-center text-center content-area">
+        <div class="clock-input-container">
+          <h2 class="mb-4">請輸入員工號碼</h2>
+          
+          <!-- 員工編號輸入框 -->
+          <div class="employee-input-group mb-4">
+            <input type="text" id="employeeId" class="employee-input" placeholder="" readonly>
+          </div>
+          
+          <!-- 數字鍵盤 -->
+          <div class="number-pad">
+            <div class="number-row">
+              <button class="number-btn" onclick="addNumber('1')">1</button>
+              <button class="number-btn" onclick="addNumber('2')">2</button>
+              <button class="number-btn" onclick="addNumber('3')">3</button>
+            </div>
+            <div class="number-row">
+              <button class="number-btn" onclick="addNumber('4')">4</button>
+              <button class="number-btn" onclick="addNumber('5')">5</button>
+              <button class="number-btn" onclick="addNumber('6')">6</button>
+            </div>
+            <div class="number-row">
+              <button class="number-btn" onclick="addNumber('7')">7</button>
+              <button class="number-btn" onclick="addNumber('8')">8</button>
+              <button class="number-btn" onclick="addNumber('9')">9</button>
+            </div>
+            <div class="number-row">
+              <button class="number-btn" onclick="addNumber('0')">0</button>
+            </div>
+          </div>
+          
+          <!-- 操作按鈕 -->
+          <div class="action-buttons mt-4">
+            <button class="action-btn clear-btn" onclick="clearInput()">清除</button>
+            <button class="action-btn submit-btn" onclick="submitEmployeeId()">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS（如需要互動） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/js/tabs.js"></script>
+</body>
+</html>
